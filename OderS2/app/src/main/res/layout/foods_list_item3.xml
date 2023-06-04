@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+   >
+
+    <LinearLayout
+
+        android:id="@+id/left_product_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_border"
+        >
+
+        <ImageView
+            android:id="@+id/iv_left_image"
+            android:layout_width="187dp"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+
+        <TextView
+            android:id="@+id/tv_left_name"
+            android:layout_width="136dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:text="左边商品名称"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+        <TextView
+            android:id="@+id/tv_left_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="左边商品标签" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+        <TextView
+            android:id="@+id/tv_left_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="左边商品价格"
+            android:textColor="#FD8F50"
+            android:textSize="20sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#DDDDDD" />
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_border"
+        android:id="@+id/right_product_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_right_image"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+
+        <TextView
+            android:id="@+id/tv_right_name"
+            android:layout_width="123dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:text="右边商品名称"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+        <TextView
+            android:id="@+id/tv_right_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="右边商品标签" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+        <TextView
+            android:id="@+id/tv_right_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="右边商品价格"
+            android:textColor="#FD8F50"
+            android:textSize="20sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+    </LinearLayout>
+
+</LinearLayout>

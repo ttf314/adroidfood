@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.oders2">
+    <!--
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.XiaoliuRengActivity"></activity>
+        <activity android:name=".activity.ShowDingDan2Activity" />
+        <activity android:name=".activity.UserPersonTextActivity" />
+        <activity android:name=".activity.EvaluateActivity" />
+        <activity android:name=".activity.ShowDingDanActivity" />
+        <activity android:name=".activity.DeTelMealActivity2" />
+        <activity android:name=".test.BaseActivity" />
+        <activity android:name=".test.ProductListActivity" />
+        <activity android:name=".test.test1Activity" />
+        <activity android:name=".activity.FindActivity" />
+        <activity android:name=".activity.UserActivity" />
+        <activity android:name=".activity.TypeActivity" />
+        <activity android:name=".activity.CarActivity" />
+        <activity android:name=".activity.DeTelMealActivity" />
+        <activity android:name=".activity.ZhuCheActivity" />
+        <activity android:name=".activity.UserMainActivity" />
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

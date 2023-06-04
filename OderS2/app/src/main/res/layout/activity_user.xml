@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UserActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/rg_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:background="#f00">
+
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gg" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="130dp"
+                    android:text="看广告"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#eee" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的订单"
+                    android:textColor="#5d5d5d" />
+
+                <TextView
+                    android:id="@+id/tv_all_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/home_arrow_right"
+                    android:text="查看全部订单"
+                    android:textColor="#5d5d5d" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_user_pay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/new_order_status_fukuan"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="待付款"
+                    android:textColor="#5d5d5d" />
+
+                <TextView
+                    android:id="@+id/tv_user_no_receive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/new_order_status_fahuo"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="未出单"
+                    android:textColor="#5d5d5d" />
+
+                <TextView
+                    android:id="@+id/tv_user_receive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/new_order_status_shouhuo"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="已出单"
+                    android:textColor="#5d5d5d" />
+
+                <TextView
+                    android:id="@+id/tv_user_drawback"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/new_order_status_help"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="已评价"
+                    android:textColor="#5d5d5d" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#eee" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_collect"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_channel_icon_collect"
+                android:text="小六壬" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_coupon"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_channel_icon_coupon"
+                android:text="个人详情" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_score"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_channel_icon_score"
+                android:text="关于我的吃瓜讨论" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_pass"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_channel_icon_prize"
+                android:text="修改密码" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_ticket"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_icon_ticket"
+                android:text="我的个人信息电子票" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_invitation"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_channel_icon_invitation"
+                android:text="邀请分享" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_callcenter"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_channel_icon_callcenter"
+                android:text="客服中心" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_feedback"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_channel_icon_feedback"
+                android:text="服务反馈" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#eee" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_bottom_parent_bg"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/home_button_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_type"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/type_button_selector"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/rb_community"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/community_button_selector"
+            android:paddingTop="10dp"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/rb_cart"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/cart_button_selector"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/user_button_selector"
+            android:text="个人中心" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66ddccbb"
+    tools:context=".activity.CarActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_recyclerviewcar"
+        android:layout_width="378dp"
+        android:layout_height="482dp"
+        android:layout_marginBottom="164dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_recyclerviewcar"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/id_tv_rmb"
+            android:layout_width="117dp"
+            android:layout_height="match_parent"
+
+            android:background="#F3F5F7"
+            android:gravity="center"
+            android:text="当前人民币￥"
+            android:textColor="#FB601B"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/id_tv_uid"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textSize="18sp" />
+        <Spinner
+            android:id="@+id/sp_wei"
+            android:layout_width="88dp"
+            android:layout_height="44dp"></Spinner>
+        <Button
+            android:id="@+id/id_btn_del"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/btn_bg_orange"
+            android:text="清空"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <TextView
+            android:textSize="0dp"
+            android:visibility="gone"
+            android:id="@+id/wei"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="位置"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.036" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="413dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894">
+
+        <TextView
+            android:id="@+id/id_tv_count"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="#F3F5F7"
+            android:gravity="center"
+            android:text="数量:0"
+            android:textColor="#FB601B"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/id_btn_pay"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/btn_bg_orange"
+            android:text="0元 立即支付"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_bottom_parent_bg"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/home_button_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_type"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/type_button_selector"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/rb_community"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/community_button_selector"
+            android:paddingTop="10dp"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/rb_cart"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/cart_button_selector"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/user_button_selector"
+            android:text="个人中心" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
